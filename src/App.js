@@ -7,13 +7,12 @@ function App() {
   return (
     <div className="App">
       <CardContainer>
-        {data.map((item, index) => (
+        {data.map((item) => (
           <Card
             key={item.id}
             name={item.name}
             restaurant={item.restaurant}
             address={item.address}
-            index={index}
           />
         ))}
       </CardContainer>

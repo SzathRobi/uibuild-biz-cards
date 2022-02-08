@@ -12,6 +12,7 @@
   width: 290px;
   height: 416px;
   padding: 27px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -28,6 +29,7 @@
   color: #33793f;
   font-size: 48px;
   font-family: "EB Garamond", serif;
+  width: 90%;
 }
 
 .Card span {
