@@ -37,6 +37,12 @@
   left: -1.5rem;
   opacity: 0;
   animation: fadeInFromLeft 50ms ease-in forwards;
+  transition: 100ms;
+}
+
+.Card span:hover {
+  color: rgb(226, 3, 96);
+  text-shadow: 0 0 2px rgb(226, 3, 96);
 }
 
 .Card h6 {
