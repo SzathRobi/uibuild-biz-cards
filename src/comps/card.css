@@ -1,0 +1,80 @@
+.CardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 62px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+}
+
+.Card {
+  width: 290px;
+  height: 416px;
+  padding: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 8px #1c1c1c, inset 6px 6px 12px rgba(0, 0, 0, 0.2),
+    inset -10px -10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(0);
+  animation: scaleUp 300ms ease-in forwards;
+}
+
+.Card h2 {
+  color: #33793f;
+  font-size: 48px;
+  font-family: "EB Garamond", serif;
+}
+
+.Card span {
+  position: relative;
+  left: -1.5rem;
+  opacity: 0;
+  animation: fadeInFromLeft 50ms ease-in forwards;
+}
+
+.Card h6 {
+  color: #999;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.Card p {
+  color: #999;
+  font-size: 24px;
+  font-family: "EB Garamond", serif;
+}
+
+@media (max-width: 767px) {
+  .CardContainer {
+    flex-direction: column;
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInFromLeft {
+  0% {
+    opacity: 0;
+    left: -1.5rem;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
